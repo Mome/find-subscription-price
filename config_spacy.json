@@ -1,0 +1,5 @@
+{
+  "pipeline": "spacy_sklearn",
+  "path" : "./models",
+  "data" : "./chat_data.rasa.json"
+}

@@ -1,0 +1,4 @@
+spacy
+textblob
+pandas
+rasa_nlu
