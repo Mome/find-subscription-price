@@ -7,7 +7,7 @@ import rasa_nlu.config as rasa_config
 from chatbot import PreferenceModel, Chatbot
 from utils import find_latest_model
 
-DEBUG = True
+DEBUG = False
 
 
 class ChatbotShell(cmd.Cmd):
