@@ -1,4 +1,4 @@
+pamdas
 numpy
-spacy
-textblob
 rasa_nlu
+spacy
