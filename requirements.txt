@@ -1,4 +1,4 @@
-pamdas
+pandas
 numpy
 rasa_nlu
 spacy
