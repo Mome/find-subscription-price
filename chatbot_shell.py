@@ -1,3 +1,5 @@
+#!/usr/bin/env python 
+
 import cmd
 
 import pandas as pd
@@ -29,7 +31,7 @@ class ChatbotShell(cmd.Cmd):
         intent, response = self.chatbot.process_message(line)
         
         if intent is 'info':
-            print('bot:', response, f'({intent})', end='\n'*2)
+            print('bot:', response, '(%s)' % intent, end='\n\n')
             intent = None
        
         if intent is None:
@@ -38,7 +40,7 @@ class ChatbotShell(cmd.Cmd):
         if not intent:
             intent, response = self.chatbot.intent_recommendation(line)
         
-        print('bot:', response, f'({intent})', end='\n'*2)
+        print('bot:', response, '(%s)' % intent, end='\n\n')
         
         if intent == "goodbye":
             return True

@@ -1,4 +1,5 @@
 import os
+import re
 
 def find_latest_model(models_dir='./models'):
     newes = None
@@ -18,14 +19,14 @@ def render_enum(seq, conj='and'):
         return ''
     if len(seq) == 1:
         return seq[0]
-    head = ', '.join(seq[:-1])
+    head = ', '.join(seq[:-1]) 
     tail = seq[-1]
     return f'{head} {conj} {tail}'
 
 
 def has_negation(sent):
     # maybe add sentiment analysis here ...
-    return 'not' in sent
+    return ('not' in sent)
 
 
 def normalize_text(text):
@@ -35,3 +36,7 @@ def normalize_text(text):
     words = (synonyms.get(w, w) for w in nlp.tokenize(text))
     
     return ' '.join(text)
+
+
+def find_numbers():
+    ...

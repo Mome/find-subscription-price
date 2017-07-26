@@ -75,10 +75,11 @@ class PreferenceModel:
         self.brand_pref[brand] *= val
     
     def __str__(self):
+        var = (self.category_pref, self.brand_pref, self.price_pref)
         return (
-            f"Category: {self.category_pref}\n"
-            f"Brand: {self.brand_pref}\n"
-            f"Price Range: {self.price_pref}")
+            "Category: %s\n"
+            "Brand: %s\n"
+            "Price Range: %s") % var
 
 
 # ---------------------------------------------------------------------------- #
@@ -114,7 +115,7 @@ class Chatbot:
             callback = vars(type(self))[identifier]
             bot_intent, response = callback(self, msg)
         except KeyError:
-            print(f'No response defined for intent: {customer_intent}')
+            print('No response defined for intent: ' + customer_intent)
             bot_intent, response = None, None
         
         self.last_intent = bot_intent
