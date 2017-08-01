@@ -439,6 +439,41 @@
         "text": "cheap",
         "intent": "price_pref",
         "entities": []
+      },
+      {
+        "text": "I want to buy between 44.99 and 49.99",
+        "intent": "price_pref",
+        "entities": []
+      },
+      {
+        "text": "34 - 88",
+        "intent": "price_pref",
+        "entities": []
+      },
+      {
+        "text": "55.4",
+        "intent": "price_pref",
+        "entities": []
+      },
+      {
+        "text": "65",
+        "intent": "price_pref",
+        "entities": []
+      },
+      {
+        "text": "between 50 and 60",
+        "intent": "price_pref",
+        "entities": []
+      },
+      {
+        "text": "higher",
+        "intent": "price_pref",
+        "entities": []
+      },
+      {
+        "text": "lower",
+        "intent": "price_pref",
+        "entities": []
       }
     ]
   }

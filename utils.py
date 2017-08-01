@@ -21,7 +21,7 @@ def render_enum(seq, conj='and'):
         return seq[0]
     head = ', '.join(seq[:-1]) 
     tail = seq[-1]
-    return f'{head} {conj} {tail}'
+    return ' '.join([head, conj, tail])
 
 
 def has_negation(sent):
@@ -38,5 +38,7 @@ def normalize_text(text):
     return ' '.join(text)
 
 
-def find_numbers():
-    ...
+def find_numbers(line):
+    pattern = r"(\d+(?:[\.,]\d*)?)"
+    groups = re.findall(pattern, line)
+    return groups

@@ -1,4 +1,6 @@
 pandas
 numpy
-rasa_nlu
 spacy
+scikit-learn
+scipy
+rasa_nlu

@@ -7,6 +7,7 @@ from utils import (
     render_enum,
     has_negation,
     normalize_text,
+    find_numbers,
 )
 
 nlp = spacy.load('en')
@@ -69,6 +70,8 @@ class PreferenceModel:
         
         return sorted(zip(prefs, data['Product Name']))
     
+    
+    
     def adjust_brand_pref(self, brand, val):
         if self.brand_pref[brand] is None:
             self.brand_pref[brand] = 0.5
@@ -93,6 +96,7 @@ class Chatbot:
         self.confidence_minimum = confidence_minimum
         self.last_intent = None
         self.last_response = None
+        self.expected_intent = None
         
     def process_message(self, msg):
         rasa_dict = self.rasa_interpreter.parse(msg)
@@ -168,15 +172,23 @@ class Chatbot:
    
     def intent_price_pref(self, msg):
         
-        # set to lower third
-        if 'cheap' in msg:
-            low, high = self.pref_model.price_range
-            span = high - low
-            high = low + (1/3)*span
-            self.pref_model.price_pref = (low, high)
+        if 'high' in msg:
+            self.pref_model = 'high'
+        
+        if 'low' in msg:
+            self.pref_model = 'low'
+        
+        if 'low' in msg:
+            self.pref_model = 'low'
         
         # todo match number with regex
-        ...
+        numbers = find_numbers(msg)
+        if numbers:
+           self.pref_model.price_pref = sorted(numbers[:2])
+        
+        if  self.pref_model.price_pref:
+            response = 'So, your price range is between %s and %s' % self.pref_model.price_pref
+            return ('info', response)
          
         return (None, None)
 
@@ -196,8 +208,11 @@ class Chatbot:
     
     def intent_question(self, msg):
         if 'brand' in msg:
-            return 'answer', "We offer " + render_enum(self.pref_model.brands) + '.'
+            return 'answer', 'We offer ' + render_enum(self.pref_model.brands) + '.'
         
-        return 'answer', "We offer " + render_enum(self.pref_model.categories) + '.'
+        if 'price' in msg:
+            return 'answer', 'We offer between %s€ and %s€.' % self.pref_model.price_range
+        
+        return 'answer', 'We offer ' + render_enum(self.pref_model.categories) + '.'
 
 
