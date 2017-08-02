@@ -259,7 +259,7 @@
       },
       {
         "text": "i love polar",
-        "intent": "category_pref",
+        "intent": "brand_pref",
         "entities": [
           {
             "start": 7,
@@ -271,7 +271,7 @@
       },
       {
         "text": "suunto",
-        "intent": "category_pref",
+        "intent": "brand_pref",
         "entities": [
           {
             "start": 0,
@@ -294,24 +294,24 @@
         ]
       },
       {
-        "text": "htc",
+        "text": "i guess htc",
         "intent": "brand_pref",
         "entities": [
           {
-            "start": 0,
-            "end": 3,
+            "start": 8,
+            "end": 11,
             "value": "htc",
             "entity": "brand"
           }
         ]
       },
       {
-        "text": "oculus",
+        "text": "give me oculus",
         "intent": "brand_pref",
         "entities": [
           {
-            "start": 0,
-            "end": 6,
+            "start": 8,
+            "end": 14,
             "value": "oculus",
             "entity": "brand"
           }
@@ -474,6 +474,162 @@
         "text": "lower",
         "intent": "price_pref",
         "entities": []
+      },
+      {
+        "text": "ok, i want drones",
+        "intent": "category_pref",
+        "entities": [
+          {
+            "start": 11,
+            "end": 17,
+            "value": "drones",
+            "entity": "category"
+          }
+        ]
+      },
+      {
+        "text": "ok, i want a samsung then.",
+        "intent": "brand_pref",
+        "entities": [
+          {
+            "start": 13,
+            "end": 20,
+            "value": "samsung",
+            "entity": "brand"
+          }
+        ]
+      },
+      {
+        "text": "a smartphone",
+        "intent": "category_pref",
+        "entities": [
+          {
+            "start": 2,
+            "end": 12,
+            "value": "smartphone",
+            "entity": "category"
+          }
+        ]
+      },
+      {
+        "text": "samsung",
+        "intent": "brand_pref",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "samsung",
+            "entity": "brand"
+          }
+        ]
+      },
+      {
+        "text": "I want to buy microsoft",
+        "intent": "brand_pref",
+        "entities": [
+          {
+            "start": 14,
+            "end": 23,
+            "value": "microsoft",
+            "entity": "brand"
+          }
+        ]
+      },
+      {
+        "text": "I want lenovo",
+        "intent": "brand_pref",
+        "entities": [
+          {
+            "start": 7,
+            "end": 13,
+            "value": "lenovo",
+            "entity": "brand"
+          }
+        ]
+      },
+      {
+        "text": "tchibo",
+        "intent": "brand_pref",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "tchibo",
+            "entity": "brand"
+          }
+        ]
+      },
+      {
+        "text": "asus",
+        "intent": "brand_pref",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "asus",
+            "entity": "brand"
+          }
+        ]
+      },
+      {
+        "text": "parrot",
+        "intent": "brand_pref",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "parrot",
+            "entity": "brand"
+          }
+        ]
+      },
+      {
+        "text": "amazon",
+        "intent": "brand_pref",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "amazon",
+            "entity": "brand"
+          }
+        ]
+      },
+      {
+        "text": "I want to buy a vaccum cleaner",
+        "intent": "category_pref",
+        "entities": [
+          {
+            "start": 16,
+            "end": 30,
+            "value": "smart home",
+            "entity": "category"
+          }
+        ]
+      },
+      {
+        "text": "computing",
+        "intent": "category_pref",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "computing",
+            "entity": "category"
+          }
+        ]
+      },
+      {
+        "text": "wearables",
+        "intent": "category_pref",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "wearables",
+            "entity": "category"
+          }
+        ]
       }
     ]
   }

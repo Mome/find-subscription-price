@@ -2,7 +2,7 @@ import os
 import re
 
 def find_latest_model(models_dir='./models'):
-    newes = None
+    newest = None
     time = 0.0
     for name in os.listdir(models_dir):
         path = os.path.join(models_dir, name)
@@ -10,7 +10,21 @@ def find_latest_model(models_dir='./models'):
         if this_time > time:
             time = this_time
             newest = path
-    return path
+    
+    return newest
+
+
+def train_model(data_dir, config_dir, models_dir='./models'):
+    from rasa_nlu.converters import load_data
+    from rasa_nlu.config import RasaNLUConfig
+    from rasa_nlu.model import Trainer
+
+    training_data = load_data(data_dir)
+    trainer = Trainer(RasaNLUConfig(config_dir))
+    trainer.train(training_data)
+    model_directory = trainer.persist(models_dir)
+    
+    return model_directory
 
 
 def render_enum(seq, conj='and'):
