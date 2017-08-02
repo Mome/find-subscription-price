@@ -12,5 +12,5 @@ on the intent and certain keywords in the message a model of the
 user's preferences is modified. If every field in the preference model
 is fed with information a recommendation is calculated.
 
-# Flowchart
+# 
 ![alt text](flowchart.jpg)
