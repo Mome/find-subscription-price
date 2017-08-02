@@ -13,4 +13,4 @@ user's preferences is modified. If every field in the preference model
 is fed with information a recommendation is calculated.
 
 # Flowchart
-[[flowchart.jpg]]
+![alt text](flowchart.jpg)
