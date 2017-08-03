@@ -1,0 +1,626 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "greet",
+        "entities": [],
+        "text": "hey"
+      },
+      {
+        "intent": "greet",
+        "entities": [],
+        "text": "howdy"
+      },
+      {
+        "intent": "greet",
+        "entities": [],
+        "text": "hey there"
+      },
+      {
+        "intent": "greet",
+        "entities": [],
+        "text": "hello"
+      },
+      {
+        "intent": "greet",
+        "entities": [],
+        "text": "hi"
+      },
+      {
+        "intent": "greet",
+        "entities": [],
+        "text": "good morning"
+      },
+      {
+        "intent": "greet",
+        "entities": [],
+        "text": "good evening"
+      },
+      {
+        "intent": "greet",
+        "entities": [],
+        "text": "dear sir"
+      },
+      {
+        "intent": "affirm",
+        "entities": [],
+        "text": "yes"
+      },
+      {
+        "intent": "affirm",
+        "entities": [],
+        "text": "yep"
+      },
+      {
+        "intent": "affirm",
+        "entities": [],
+        "text": "yeah"
+      },
+      {
+        "intent": "affirm",
+        "entities": [],
+        "text": "indeed"
+      },
+      {
+        "intent": "affirm",
+        "entities": [],
+        "text": "that's right"
+      },
+      {
+        "intent": "affirm",
+        "entities": [],
+        "text": "ok"
+      },
+      {
+        "intent": "affirm",
+        "entities": [],
+        "text": "great"
+      },
+      {
+        "intent": "affirm",
+        "entities": [],
+        "text": "right, thank you"
+      },
+      {
+        "intent": "affirm",
+        "entities": [],
+        "text": "correct"
+      },
+      {
+        "intent": "affirm",
+        "entities": [],
+        "text": "great choice"
+      },
+      {
+        "intent": "affirm",
+        "entities": [],
+        "text": "sounds really good"
+      },
+      {
+        "intent": "goodbye",
+        "entities": [],
+        "text": "bye"
+      },
+      {
+        "intent": "goodbye",
+        "entities": [],
+        "text": "goodbye"
+      },
+      {
+        "intent": "goodbye",
+        "entities": [],
+        "text": "good bye"
+      },
+      {
+        "intent": "goodbye",
+        "entities": [],
+        "text": "stop"
+      },
+      {
+        "intent": "goodbye",
+        "entities": [],
+        "text": "end"
+      },
+      {
+        "intent": "goodbye",
+        "entities": [],
+        "text": "farewell"
+      },
+      {
+        "intent": "goodbye",
+        "entities": [],
+        "text": "Bye bye"
+      },
+      {
+        "intent": "goodbye",
+        "entities": [],
+        "text": "have a good one"
+      },
+      {
+        "intent": "category_pref",
+        "entities": [
+          {
+            "start": 16,
+            "end": 21,
+            "value": "phone",
+            "entity": "category"
+          }
+        ],
+        "text": "i want to buy a phone"
+      },
+      {
+        "intent": "brand_pref",
+        "entities": [
+          {
+            "start": 7,
+            "end": 12,
+            "value": "Apple",
+            "entity": "brand"
+          },
+          {
+            "start": 17,
+            "end": 24,
+            "value": "Samsung",
+            "entity": "brand"
+          }
+        ],
+        "text": "i like apple"
+      },
+      {
+        "intent": "category_pref",
+        "entities": [
+          {
+            "start": 17,
+            "end": 25,
+            "value": "Computing",
+            "entity": "category"
+          }
+        ],
+        "text": "i want to rent a computer"
+      },
+      {
+        "intent": "category_pref",
+        "entities": [
+          {
+            "start": 19,
+            "end": 21,
+            "value": "gaming & vr",
+            "entity": "category"
+          }
+        ],
+        "text": "i am interested in vr"
+      },
+      {
+        "intent": "brand_pref",
+        "entities": [
+          {
+            "start": 9,
+            "end": 16,
+            "value": "Samsung",
+            "entity": "brand"
+          }
+        ],
+        "text": "i prefer samsung"
+      },
+      {
+        "intent": "disaffirm",
+        "entities": [],
+        "text": "no"
+      },
+      {
+        "intent": "disaffirm",
+        "entities": [],
+        "text": "I do not like that"
+      },
+      {
+        "intent": "disaffirm",
+        "entities": [],
+        "text": "I do not want that"
+      },
+      {
+        "intent": "category_pref",
+        "entities": [
+          {
+            "start": 17,
+            "end": 22,
+            "value": "phone",
+            "entity": "category"
+          }
+        ],
+        "text": "i want to rent a phone"
+      },
+      {
+        "intent": "category_pref",
+        "entities": [
+          {
+            "start": 27,
+            "end": 35,
+            "value": "computing",
+            "entity": "category"
+          }
+        ],
+        "text": "I would like to purchase a computer"
+      },
+      {
+        "intent": "brand_pref",
+        "entities": [
+          {
+            "start": 7,
+            "end": 12,
+            "value": "polar",
+            "entity": "brand"
+          }
+        ],
+        "text": "i love polar"
+      },
+      {
+        "intent": "brand_pref",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "suunto",
+            "entity": "brand"
+          }
+        ],
+        "text": "suunto"
+      },
+      {
+        "intent": "brand_pref",
+        "entities": [
+          {
+            "start": 7,
+            "end": 16,
+            "value": "microsoft",
+            "entity": "brand"
+          }
+        ],
+        "text": "i want microsoft"
+      },
+      {
+        "intent": "brand_pref",
+        "entities": [
+          {
+            "start": 8,
+            "end": 11,
+            "value": "htc",
+            "entity": "brand"
+          }
+        ],
+        "text": "i guess htc"
+      },
+      {
+        "intent": "brand_pref",
+        "entities": [
+          {
+            "start": 8,
+            "end": 14,
+            "value": "oculus",
+            "entity": "brand"
+          }
+        ],
+        "text": "give me oculus"
+      },
+      {
+        "intent": "price_pref",
+        "entities": [],
+        "text": "i want something cheap"
+      },
+      {
+        "intent": "price_pref",
+        "entities": [],
+        "text": "the price does not matter"
+      },
+      {
+        "intent": "question",
+        "entities": [],
+        "text": "what do you offer?"
+      },
+      {
+        "intent": "question",
+        "entities": [],
+        "text": "what do you have?"
+      },
+      {
+        "intent": "category_pref",
+        "entities": [
+          {
+            "start": 17,
+            "end": 22,
+            "value": "wearables",
+            "entity": "category"
+          }
+        ],
+        "text": "I want to have a watch"
+      },
+      {
+        "intent": "brand_pref",
+        "entities": [
+          {
+            "start": 7,
+            "end": 11,
+            "value": "asus",
+            "entity": "brand"
+          },
+          {
+            "start": 13,
+            "end": 19,
+            "value": "parrot",
+            "entity": "brand"
+          },
+          {
+            "start": 21,
+            "end": 27,
+            "value": "amazon",
+            "entity": "brand"
+          },
+          {
+            "start": 32,
+            "end": 38,
+            "value": "lenovo",
+            "entity": "brand"
+          }
+        ],
+        "text": "i like asus, parrot, amazon and lenovo"
+      },
+      {
+        "intent": "category_pref",
+        "entities": [
+          {
+            "start": 22,
+            "end": 27,
+            "value": "drone",
+            "entity": "category"
+          }
+        ],
+        "text": "I am thinking about a drone"
+      },
+      {
+        "intent": "category_pref",
+        "entities": [
+          {
+            "start": 19,
+            "end": 22,
+            "value": "smart home",
+            "entity": "category"
+          }
+        ],
+        "text": "I am interested in iot"
+      },
+      {
+        "intent": "category_pref",
+        "entities": [
+          {
+            "start": 21,
+            "end": 31,
+            "value": "smart home",
+            "entity": "category"
+          }
+        ],
+        "text": "something concerning smart home"
+      },
+      {
+        "intent": "question",
+        "entities": [],
+        "text": "what brands do you have?"
+      },
+      {
+        "intent": "question",
+        "entities": [],
+        "text": "what brands do you offer"
+      },
+      {
+        "intent": "question",
+        "entities": [],
+        "text": "What can you do for me?"
+      },
+      {
+        "intent": "price_pref",
+        "entities": [],
+        "text": "expensive"
+      },
+      {
+        "intent": "price_pref",
+        "entities": [],
+        "text": "cheap"
+      },
+      {
+        "intent": "price_pref",
+        "entities": [],
+        "text": "I want to buy between 44.99 and 49.99"
+      },
+      {
+        "intent": "price_pref",
+        "entities": [],
+        "text": "34 - 88"
+      },
+      {
+        "intent": "price_pref",
+        "entities": [],
+        "text": "55.4"
+      },
+      {
+        "intent": "price_pref",
+        "entities": [],
+        "text": "65"
+      },
+      {
+        "intent": "price_pref",
+        "entities": [],
+        "text": "between 50 and 60"
+      },
+      {
+        "intent": "price_pref",
+        "entities": [],
+        "text": "higher"
+      },
+      {
+        "intent": "price_pref",
+        "entities": [],
+        "text": "lower"
+      },
+      {
+        "intent": "category_pref",
+        "entities": [
+          {
+            "start": 11,
+            "end": 17,
+            "value": "drones",
+            "entity": "category"
+          }
+        ],
+        "text": "ok, i want drones"
+      },
+      {
+        "intent": "brand_pref",
+        "entities": [
+          {
+            "start": 13,
+            "end": 20,
+            "value": "samsung",
+            "entity": "brand"
+          }
+        ],
+        "text": "ok, i want a samsung then."
+      },
+      {
+        "intent": "category_pref",
+        "entities": [
+          {
+            "start": 2,
+            "end": 12,
+            "value": "smartphone",
+            "entity": "category"
+          }
+        ],
+        "text": "a smartphone"
+      },
+      {
+        "intent": "brand_pref",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "samsung",
+            "entity": "brand"
+          }
+        ],
+        "text": "samsung"
+      },
+      {
+        "intent": "brand_pref",
+        "entities": [
+          {
+            "start": 14,
+            "end": 23,
+            "value": "microsoft",
+            "entity": "brand"
+          }
+        ],
+        "text": "I want to buy microsoft"
+      },
+      {
+        "intent": "brand_pref",
+        "entities": [
+          {
+            "start": 7,
+            "end": 13,
+            "value": "lenovo",
+            "entity": "brand"
+          }
+        ],
+        "text": "I want lenovo"
+      },
+      {
+        "intent": "brand_pref",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "tchibo",
+            "entity": "brand"
+          }
+        ],
+        "text": "tchibo"
+      },
+      {
+        "intent": "brand_pref",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "asus",
+            "entity": "brand"
+          }
+        ],
+        "text": "asus"
+      },
+      {
+        "intent": "brand_pref",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "parrot",
+            "entity": "brand"
+          }
+        ],
+        "text": "parrot"
+      },
+      {
+        "intent": "brand_pref",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "amazon",
+            "entity": "brand"
+          }
+        ],
+        "text": "amazon"
+      },
+      {
+        "intent": "category_pref",
+        "entities": [
+          {
+            "start": 16,
+            "end": 30,
+            "value": "smart home",
+            "entity": "category"
+          }
+        ],
+        "text": "I want to buy a vaccum cleaner"
+      },
+      {
+        "intent": "category_pref",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "computing",
+            "entity": "category"
+          }
+        ],
+        "text": "computing"
+      },
+      {
+        "intent": "category_pref",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "wearables",
+            "entity": "category"
+          }
+        ],
+        "text": "wearables"
+      }
+    ],
+    "regex_features": [
+      {
+        "name": "zipcode",
+        "pattern": "[0-9]{5}"
+      }
+    ]
+  }
+}
